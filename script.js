@@ -33,3 +33,15 @@ var Singleton = function() {
 
   Singleton.instance = this;
 };
+
+//Convert Hash to Array
+
+function convertHashToArray(hash) {
+  let a = Object.keys(hash);
+  let b = Object.values(hash);
+  let array = [];
+  for (let i = 0; i < a.length; i++) {
+    array.push([a[i], b[i]]);
+  }
+  return array.sort();
+}
