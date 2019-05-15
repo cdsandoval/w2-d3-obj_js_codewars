@@ -19,3 +19,17 @@ class Cat extends Animal {
     return super.speak() + this.name + " goes meow.";
   }
 }
+
+//Singleton Pattern
+
+var Singleton = function() {
+  // implement singleton Class
+
+  if (typeof Singleton.instance === "object") {
+    return Singleton.instance;
+  }
+
+  this.test;
+
+  Singleton.instance = this;
+};
